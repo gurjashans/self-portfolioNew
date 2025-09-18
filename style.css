@@ -554,19 +554,19 @@
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     padding: 10px;
   }
   .menu {
-    flex-direction: column;
+    flex-direction: raw;
     gap: 20px;
   }
   .btn1 {
     margin-top: 10px;
   }
   section {
-    flex-direction: column;
+    flex-direction: raw;
     text-align: center;
     padding: 20px;
   }
@@ -594,4 +594,5 @@
   .text2 { font-size: 24px; }
   .btn1 { padding: 8px 20px; font-size: 14px; }
 }
+
 
