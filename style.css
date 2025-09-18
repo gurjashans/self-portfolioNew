@@ -540,7 +540,7 @@
   .overlay-img { width: 400px; }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 350px) {
   .navbar {
     flex-direction: row;
     height: auto;
@@ -596,6 +596,7 @@
   .text2 { font-size: 24px; }
   .btn1 { padding: 8px 20px; font-size: 14px; }
 }
+
 
 
 
