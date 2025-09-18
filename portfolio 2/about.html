@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.57/build/spline-viewer.js"></script>
+  <link rel="icon" type="image/png" href="assets/Gemini_Generated_Image_68hhkt68hhkt68hh.png">
+  <link rel="shortcut icon" href="assets/Gemini_Generated_Image_68hhkt68hhkt68hh.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="assests\Gemini_Generated_Image_68hhkt68hhkt68hh.png" alt="LOGO" class="logo">
+    <ul class="menu">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>     <!-- ✅ link to about.html -->
+  <li><a href="projects.html">Projects</a></li> <!-- ✅ link to projects.html -->
+</ul>
+    <button class="btn1">Connect</button>
+  </nav>
+
+  <!--fIRST PAGE-->
+  <section id="Introduction">
+    <h1 class="text4">INTEODUCTION</h1>
+    <P class="text5">Hi, my name is Gurjashan, and I'm 20 years old. I'm a tech enthusiast with a strong interest in data and programming. I'm fluent in four languages and hold a French certification. Along with my technical skills, I bring strong problem-solving abilities and effective communication skills.</P>
+    <img src="assests\IMG-20240108-WA0001.jpg" alt="img1" class="img1">
+    <img src="assests\avatar.png" alt="img2" class="img2">
+<spline-viewer class="background3" url="https://prod.spline.design/wasXmjHvntUoZEy2/scene.splinecode"></spline-viewer>
+  </section>
+  <!--second page-->
+  <section id="aboutme">
+    <h1 class="text6">ABOUT ME</h1>
+    <P class="text7">Tech enthusiast with interest in data and programming.
+      <p class="text8">Fluent in four languages with French certification.
+        <p class="text9">Strong problem-solving and communication skills.
+</p>
+</p>
+</P>
+<img src="assests\IMG-20240108-WA0001.jpg" alt="img3" class="img3">
+<spline-viewer class="background4" url="https://prod.spline.design/dqaarIDIXE4SZAUh/scene.splinecode"></spline-viewer>
+  </section>
+  <!--third page-->
+  <section id="education">
+    <h1 class="text10">EDUCATION</h1>
+    <h2 class="text11">2020
+      <h3 class="text12">Jatindera Greenfield School, Punjab
+        <h4 class="text13">Completed my 10th Grade, CBSE Board, 2020
+        </h4>
+      </h3>
+    </h2>
+    <h2 class="text14">2023
+      <h3 class="text15">Jatindera Greenfield School, Punjab
+        <h4 class="text16">Completed my 12th Grade, CBSE Board, 2023 with Focus on Science and Math</h4>
+      </h3>
+    </h2>
+    <h2 class="text17">2024
+      <h3 class="text18">Greate Learning
+        <h4 class="text19">Completed my Python, Java, and web development course from great learning</h4>
+      </h3>
+    </h2>
+    <img src="assests\04c0c2b8-784c-4fe6-8481-e720faa07b0f.jpg" alt="img4" class="img4">
+    <spline-viewer class="background5" url="https://prod.spline.design/V3S2Re6Tynipz5O2/scene.splinecode"></spline-viewer>
+  </section>
+  <!--Fourth page-->
+  <section class="work">
+    <h1 class="text20">WORK EXPERIENCE
+      <h2 class="text21">2020
+        <h3 class="text22">JS Motor Garage – Mullapur, Punjab
+          <h4 class="text23">I worked at JS Motor Garage in Mullapur, Punjab, as a Data Manager June 2023 to december 2024. In this role, I manage customer and vehicle records, maintain service and inventory logs, and develop Excel dashboards and Google Sheets tools to streamline operations and improve data accessibility.</h4>
+        </h3>
+      </h2>
+    </h1>
+    <img src="assests\2cb8e13a-299f-4daa-bbc2-dc6cebc68ee1.jpg" alt="img5" class="img5">
+    <img src="assests\04c0c2b8-784c-4fe6-8481-e720faa07b0f.jpg" alt="img6" class="img6">
+<spline-viewer class="background6" url="https://prod.spline.design/RahPFpUJLHbLensm/scene.splinecode"></spline-viewer>
+  </section>
+  <a href="index.html">← Back to Home</a>
+
+  <!-- Dots Navigation -->
+  <div class="dot-nav">
+    <a href="#Introduction" class="active"></a>
+    <a href="#aboutme"></a>
+    <a href="#education"></a>
+    <a href="#work"></a>
+  </div>
+
+  <script>
+    // Highlight active dot on scroll
+    const sections = document.querySelectorAll("section");
+    const dots = document.querySelectorAll(".dot-nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      dots.forEach(dot => {
+        dot.classList.remove("active");
+        if (dot.getAttribute("href") === "#" + current) {
+          dot.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
