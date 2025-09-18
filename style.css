@@ -545,3 +545,52 @@
       width: 650px;
       z-index: 1;
 }
+/* ✅ Make site responsive */
+@media (max-width: 1024px) {
+  .text1 { font-size: 48px; }
+  .text2 { font-size: 32px; }
+  .overlay-img { width: 400px; }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .btn1 {
+    margin-top: 10px;
+  }
+  section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  img, .overlay-img, .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+    max-width: 90%;
+    height: auto;
+    position: static;
+    margin: 10px auto;
+  }
+  .text1, .text2, .text3, .text4, .text5,
+  .text6, .text7, .text8, .text9,
+  .text10, .text11, .text12, .text13,
+  .text14, .text15, .text16, .text17,
+  .text18, .text19, .text20, .text21,
+  .text22, .text23, .text24, .text25,
+  .text26, .text27, .text28 {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .text1 { font-size: 32px; }
+  .text2 { font-size: 24px; }
+  .btn1 { padding: 8px 20px; font-size: 14px; }
+}
