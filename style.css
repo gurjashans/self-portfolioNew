@@ -570,10 +570,13 @@
     transition: 0.5s;
     z-index: 6;
 }
+.menu li:hover{
+  transform: scale(1.2);
+  background:  linear-gradient(#6EE7B7, #839fcc, #9333EA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  .btn1 {
-    margin-top: 10px;
-  }
+}
   section {
     flex-direction: column;
     text-align: center;
@@ -605,6 +608,7 @@
   .text2 { font-size: 24px; }
   .btn1 { padding: 8px 20px; font-size: 14px; }
 }
+
 
 
 
