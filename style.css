@@ -552,7 +552,7 @@
   .overlay-img { width: 400px; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .navbar {
     flex-direction: row;
     height: auto;
@@ -569,16 +569,18 @@
     font-size: 1rem;
     transition: 0.5s;
     z-index: 6;
-     background:  linear-gradient(#6EE7B7, #839fcc, #9333EA);
 }
+
   .btn1 {
     margin-top: 10px;
   }
   section {
-    flex-direction: raw;
+    flex-direction: column;
     text-align: center;
     padding: 20px;
   }
+  }
+  @media (max-width: 768px){
   img, .overlay-img, .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
     max-width: 90%;
     height: auto;
@@ -603,6 +605,8 @@
   .text2 { font-size: 24px; }
   .btn1 { padding: 8px 20px; font-size: 14px; }
 }
+
+
 
 
 
